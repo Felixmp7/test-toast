@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
-import { TooltipAPI } from "react-tooltip-player";
 import "./App.css";
 
 function App() {
