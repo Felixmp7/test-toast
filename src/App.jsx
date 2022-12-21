@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
 function App() {
-  // useEffect(() => {
-  //   TooltipAPI.show("63a3171552149c001916808f");
-  // }, []);
+  useEffect(() => {
+    TooltipAPI.show("63a3171552149c001916808f");
+  }, []);
+
   return (
     <div className="App">
       <div>
@@ -18,9 +19,6 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => Tooltip.API.show("63a3171552149c001916808f")}>
-          Trigger Campaign
-        </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
