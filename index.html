@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
     <script type="text/javascript">
       window.Tooltip ||
         (function (t, e) {
@@ -12,7 +16,6 @@
             url: "https://cdn.tooltip.io/static/player.js",
             key: "5d61aad8-3a46-49e2-a83b-f437a9bc615c",
             async: true,
-            autoLoad: true,
           };
           window.Tooltip = { cs: [], _apiKey: o.key };
           for (
@@ -25,6 +28,7 @@
                 "refresh",
                 "show",
                 "hide",
+                "on",
               ],
               i = {},
               n = 0;
@@ -48,9 +52,5 @@
             (n.src = o.url);
         })(document, "script");
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

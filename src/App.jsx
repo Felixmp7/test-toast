@@ -1,17 +1,12 @@
 import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
+import { TooltipAPI } from "react-tooltip-player";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    // Your application code
-    App.on("change", () => {
-      Tooltip.API.show("63a3171552149c001916808f");
-    });
-  }, []);
-
+  // useEffect(() => {
+  //   TooltipAPI.show("63a3171552149c001916808f");
+  // }, []);
   return (
     <div className="App">
       <div>
@@ -24,8 +19,8 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+        <button onClick={() => Tooltip.API.show("63a3171552149c001916808f")}>
+          Trigger Campaign
         </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
