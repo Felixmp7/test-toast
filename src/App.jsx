@@ -6,7 +6,6 @@ function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("Se ejecutó");
     // Your application code
     App.on("change", () => {
       Tooltip.API.show("63a309fb52149c0019168087");
