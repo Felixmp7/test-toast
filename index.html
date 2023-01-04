@@ -9,49 +9,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script type="text/javascript">
-      window.Tooltip ||
-        (function (t, e) {
-          var o = {
-            url: "https://cdn.tooltip.io/static/player.js",
-            key: "7ebcfce1-83f5-4857-9276-2a12d44083c9",
-            async: true,
-          };
-
-          window.Tooltip = { cs: [], _apiKey: o.key };
-          for (
-            var r = [
-                "identify",
-                "goal",
-                "updateUserData",
-                "start",
-                "stop",
-                "refresh",
-                "show",
-                "hide",
-                "on",
-              ],
-              i = {},
-              n = 0;
-            n < r.length;
-            n++
-          ) {
-            var a = r[n];
-            i[a] = (function (t) {
-              return function () {
-                var e = Array.prototype.slice.call(arguments);
-                window.Tooltip.cs.push({ method: t, args: e });
-              };
-            })(a);
-          }
-          window.Tooltip.API = i;
-          var n = t.createElement(e),
-            s = t.getElementsByTagName(e)[0];
-          (n.type = "text/javascript"),
-            (n.async = o.async),
-            s.parentNode.insertBefore(n, s),
-            (n.src = o.url);
-        })(document, "script");
-    </script>
   </body>
 </html>
