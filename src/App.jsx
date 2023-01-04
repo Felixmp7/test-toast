@@ -1,12 +1,7 @@
-import { useEffect } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 
 function App() {
-  useEffect(() => {
-    TooltipAPI.show("63a3171552149c001916808f");
-  }, []);
-
   return (
     <div className="App">
       <div>
