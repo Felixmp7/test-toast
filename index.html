@@ -9,49 +9,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script type="text/javascript">
-      window.Tooltip ||
-        (function (t, e) {
-          var o = {
-            url: "https://cdn.tooltip.io/static/player.js",
-            key: "fc5c4510-cb9f-4181-9be5-8e27e5e1737e",
-            async: true,
-          };
+    <script type='text/javascript'>
+window.Tooltip||function(t,e){var o={
+url:"https://cdn.tooltip.io/static/player.js",
+key:"410d776b-5019-4973-b7f6-4001a4197676",
+async:true
+};
 
-          window.Tooltip = { cs: [], _apiKey: o.key };
-          for (
-            var r = [
-                "identify",
-                "goal",
-                "updateUserData",
-                "start",
-                "stop",
-                "refresh",
-                "show",
-                "hide",
-                "on",
-              ],
-              i = {},
-              n = 0;
-            n < r.length;
-            n++
-          ) {
-            var a = r[n];
-            i[a] = (function (t) {
-              return function () {
-                var e = Array.prototype.slice.call(arguments);
-                window.Tooltip.cs.push({ method: t, args: e });
-              };
-            })(a);
-          }
-          window.Tooltip.API = i;
-          var n = t.createElement(e),
-            s = t.getElementsByTagName(e)[0];
-          (n.type = "text/javascript"),
-            (n.async = o.async),
-            s.parentNode.insertBefore(n, s),
-            (n.src = o.url);
-        })(document, "script");
-    </script>
+window.Tooltip={cs:[],_apiKey:o.key};for(
+var r=["identify","goal","updateUserData","start","stop","refresh","show","hide","on"],
+i={},n=0;n<r.length;n++){var a=r[n];i[a]=function(t){return function(){var e=Array.prototype.slice.call(arguments);
+window.Tooltip.cs.push({method:t,args:e})}}(a)}window.Tooltip.API=i;var n=t.createElement(e),s=t.getElementsByTagName(e)[0];
+n.type="text/javascript",n.async=o.async,s.parentNode.insertBefore(n,s),n.src=o.url}(document,"script");
+</script>
   </body>
 </html>
